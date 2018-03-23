@@ -1,0 +1,207 @@
+/*блок выбора отеля*/
+
+.hotel-group {
+    padding: 30px 0;
+}
+.hotel-group .hotel {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.hotel-group .col-xs-12 {
+  padding: 0
+}
+section.hotel-block {
+  padding-bottom: 40px;
+  border: 2px solid #0d51a0;
+  border-bottom: 8px solid #0d51a0;
+  background: transparent url(../images/logo-bg.png) no-repeat;
+  background-position: left center;
+  margin-bottom: 20px
+}
+  section.hotel-block > .row {
+    width: 90%;
+    margin: 0 5%;
+  }
+  section.hotel-block .form-group {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.hotel-block .hotel-select {
+    padding: 3px 10px 7px;
+    background: #fff url(../images/arrow-down.png) no-repeat;
+    background-position: 97% center;
+  }
+  section.hotel-block .inquiry-hotel {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  section.hotel-block .button-hotel {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    overflow: hidden;
+    border: 2px solid #c6c6c6;
+    border-radius: 1px;
+    padding: 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(83, 155, 67, .8);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+  }
+
+  section.hotel-block .button-hotel:hover {
+    background-color: rgba(83, 155, 67, 1);
+    outline-color: rgba(204, 204, 204, .5)
+  }
+
+  /*--paginator----*/
+  .paginator {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: right;
+  }
+  span.pages {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .paginator .active {
+  font-size: 18px;
+    color: #0d51a0;
+    font-weight: 600;
+  }
+  .paginator .left, .paginator .right {
+    font-size: 26px;
+    vertical-align: sub;
+}
+  /*--/paginator----*/
+
+    /*---hotel item---*/
+  .hotel-item {
+    width: 100%;
+    height: 180px;
+    margin: 15px 0;
+    background-color: #ececec;
+    border: 1px solid #6f6f6e;
+    overflow: hidden;
+  }
+    .hotel-item .image {
+      height: 180px;
+      object-fit: fill;
+      padding-right: 0;
+      overflow: hidden;
+      margin-left: -3px;
+    }
+    .hotel-item .image > img {
+      height: 100%
+    }
+    .hotel-item .description {
+      padding: 0;
+    }
+    .hotel-item .top {
+      width: 100%;
+      height: 50px;
+      background: #0d51a0;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .hotel-title {
+      margin: 10px 4% 10px 8%;
+    }
+      .hotel-title .stars {
+        font-size: 12px;
+        vertical-align: top;
+      }
+    /*---/hotel item---*/
+
+  section.hotel-block .form-group .text,
+  section.hotel-block .form-group .text-right{
+    margin: 0;
+    padding: 0;
+    color: #265aa8;
+    font-weight: 600;
+  }
+  section.hotel-block .new-select-style {
+    width: 100%;
+    margin-left: 0;
+  }
+  section.hotel-block .grown-select,
+  section.hotel-block .hotel-select {
+    position: relative;
+    padding: 5px 10px;
+    color: #5e5e5e;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    /*for WebKit*/
+   -webkit-appearance: none;
+   /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    -o-text-overflow: '';
+       text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background: #fff url(../images/arrow-down.png) no-repeat;
+    background-position: 97% center;
+  }
+  section.hotel-block select:focus > option:checked {
+    background: #f6f6f6;
+  }
+  .travelers-hotel .feedback {
+    margin: 10px 0;
+  }
+.travelers-hotel .feed {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.travelers-hotel .end-line {
+  width: 100%;
+  height: 3px;
+  background-color: #c6c6c6;
+  margin: 10px 0 25px;
+}
+/*--стили из style-form.css - конец--*/
+
+/*------- медиа-запросы -------*/
+
+@media (max-width:992px) {
+  section.hotel-block .button-hotel {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width:950px) {
+
+}
+
+@media (max-width:768px) {
+
+}
+@media (max-width:570px) {
+
+}
+@media (max-width:420px) {
+	.button-print, .button-inquiry {
+	  font-size: 12px;
+	}
+	.circle-up .min-up {
+	  margin-left: -10px;
+	}
+}

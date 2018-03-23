@@ -1,0 +1,878 @@
+body {
+  background: #0451a0;
+}
+.logo-line .line:before {
+  background-image: url(../images/ico-line.png);
+}
+.form-travel-section {
+  padding: 30px 0;
+}
+.form-travel-section .travel {
+  color: #265aa8;
+  font-size: 60px;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0
+}
+  /*--блок слайдера с иллюминаторами--*/
+.banner-block .row {
+    margin-left: -40px;
+    margin-right: -40px;
+    overflow: hidden;
+}
+.banner-block.animated .card-wrap{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+	transition: all 0.5s 0s;
+    -webkit-transition: all 0.5s 0s;
+    opacity: 1;
+}
+.banner-block .card-wrap{
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: 0;
+}
+.banner-block .card-figure {
+    height: 252px;
+}
+.card-figure img {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.card-wrap:hover .card-figure .horizontal {
+    -webkit-transform: translateX(-50%) scale(1.1);
+    -ms-transform: translateX(-50%) scale(1.1);
+    transform: translateX(-50%) scale(1.1);
+}
+.card-wrap:hover .card-figure img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.banner-block img {
+    width: 90%;
+    margin-top: 20%;
+    object-fit: cover;/*аналог свойства cover у background`а*/
+}
+.banner-block .illuminator {
+  position: relative;
+  margin-right: -1px;
+}
+.banner-block .illuminator::after {
+  display: table;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 252px;
+  content: "";
+  background: url(../images/illuminator.png) no-repeat;
+  background-size: cover;
+  z-index: 5
+}
+.banner-block .illuminator.z::after {
+  background: url(../images/illuminator_z.fw.png) no-repeat;
+  background-size: cover;
+}
+.travel-line {
+  height: 5px;
+  background-color: #265aa8;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+.travelers {
+  padding: 17px 0;
+}
+.travelers .row {
+  padding: 0;
+  margin: 0;
+}
+.travelers .people {
+  margin-top: -5px;
+}
+.travelers .people .form-group {
+  margin-top: -5px;
+}
+.travelers .col-sm-10, .travelers .col-xs-12 {
+  padding: 0 5px;
+}
+  .travelers .travelers-title {
+    text-align: center;
+    margin-top: 7px
+  }
+
+  .travelers .section-title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 25px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #fff;
+    z-index: 2;
+  }
+  .travelers-title::after {
+    content: "";
+    position: relative;
+    top: -18px;
+    display: block;
+    border-bottom: 2px solid #c6c6c6;
+  }
+
+  /*------- радиокнопки -------*/
+
+input[type=radio].default,
+input[type=checkbox].default {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+/*---Блок выбора состава тургрупп. Радиокнопки в виде изображений---*/
+
+.col-xs-3.two {
+padding-left: 3.3%;
+}
+.col-xs-3.third {
+padding-left: 7.6%;
+}
+.col-xs-3.right {
+text-align: right;
+padding-right: 5px;
+}
+
+.travelers .person-group {
+  padding-top: 14px;
+  margin-top: 15px
+}
+input[type=radio] + label.person {
+  display: inline-block;
+  height: 140px;
+  width: 130px;
+  margin: 0;
+   background: transparent url(../images/person.png) no-repeat;
+    background-size: 700%;
+}
+input[type=radio] + label.person1{
+    background-position: 0 0;
+}
+input[type=radio] + label.person2 {
+    background-position-x: -255px
+}
+input[type=radio] + label.person3 {
+  background-position-x: -530px
+}
+
+input[type=radio] + label.person4 {
+  background-position-x: -780px
+}
+	input[type=radio]:checked + label.person,
+  input[type=radio] + label.person:hover {
+	  background-position-y: -211px;
+	}
+
+/*блок выбора количества путешественников*/
+
+.form-group {
+  position: relative;
+  display: inline-block;
+}
+
+.new-select-style {
+  position: relative;
+  width: 90%;
+  height: 35px;
+  margin: 0;
+  margin-left: 5px;
+  overflow: hidden;
+  border: 2px solid #c6c6c6;
+  box-sizing: border-box;
+  border-radius: 1px;
+  -webkit-transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.new-select-style.center {
+  margin: 0 5%;
+}
+.new-select-style.right {
+  margin: 0 0 0 10%;
+}
+.country .new-select-style.left {
+  width: 84%;
+}
+/*.country .new-select-style.two {
+  width: 100%;
+  margin-left: -20px
+}
+.country .new-select-style.right {
+  width: 84%;
+}*/
+.country .form-group.two {
+  margin-left: -3.3%
+}
+.country .form-group.two > .new-select-style {
+  width: 98%
+}
+.country .form-group.right {
+  margin-left: 3.5%;
+  width: 24.5%;
+}
+.country .form-group.right > .new-select-style {
+  width: 99%
+}
+.country .form-group.program {
+  margin-left: -3.3%;
+  width: 53.3%
+}
+.country .form-group.program > .new-select-style {
+  width: 99%
+}
+.grown-select {
+  position: relative;
+  color: #5e5e5e;
+  font-size: 18px;
+  line-height: 30px;
+  border: none;
+  border-radius: 0;
+  /*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  -o-text-overflow: '';
+     text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  background: transparent url(../images/arrow-down.png) no-repeat;
+  background-position: 95% center;
+}
+select::-ms-expand {
+  display: none;
+}
+.country .input-style.left {
+  width: 84%;
+  margin-left: 5px;
+}
+.form-group .text,
+ .form-group .text-right{
+  margin: 0 -50px 5px 5px;
+  line-height: 14px;
+  padding: 0;
+  color: #265aa8;
+  font-weight: 600;
+}
+.form-group .text-right {
+  margin-right: 0
+}
+.form-group .text-right {
+  text-align: right;
+}
+.form-group .text-middle {
+  margin-right: 10%
+}
+
+.form-group .help-block {
+  display: block;
+  font-size: 11px;
+  color: #265aa8;
+  padding: 0 0 0 5px;
+}
+.form-group .input-style {
+   position: relative;
+   width: 100%;
+   height: 35px;
+   overflow: hidden;
+   border: 2px solid #c6c6c6;
+   border-radius: 1px;
+   padding: 7px 10px;
+   color: #5e5e5e;
+   font-size: 16px;
+   -webkit-transition: all .5s ease 0s;
+      -webkit-transition: all .5s ease 0s;
+      transition: all .5s ease 0s;
+}
+
+select option:checked,
+select option:hover {
+    -webkit-box-shadow: 0 0 10px 100px #ccc inset;
+            box-shadow: 0 0 10px 100px #ccc inset;
+}
+select:focus > option:checked {
+    background: #ccc !important;
+}
+
+/*Календарь в форме*/
+.travelers .calendar{
+  width: -webkit-calc(100% - 23px);
+width: calc(100% - 23px);
+display: inline-block;
+height: 32px;
+text-align: center;
+}
+.travelers .calendar-icon{
+  background: #eee url(../images/ico_calendar_goodwin.gif) no-repeat center;
+    display: inline-block;
+    padding: 6px 3px 10px;
+    width: 22px;
+    height: 34px;
+    vertical-align: middle;
+    margin-left: -3px;
+    cursor: pointer;
+}
+   /*---- блок выбора билетов ----*/
+.travelers.avia {
+  padding: 0
+}
+  .travelers.avia .new-select-style.first {
+    width: 86%
+  }
+  .travelers.avia .new-select-style.last {
+    width: 98%
+  }
+  .travelers.avia .input-style.middle {
+    width: 90%;
+    margin-left: -3px;
+}
+/*блок выбора категории отеля*/
+.travelers.stars-group {
+  padding-bottom: 8px
+}
+.travelers.stars-group .travelers-title {
+  margin-top: 15px
+}
+.travelers.stars-group > .row {
+  margin-top: 5px
+}
+.travelers.stars-group .col-xs-4.middle {
+  text-align: center;
+}
+input[type=radio] + label.stars {
+  display: inline-block;
+  height: 110px;
+  width: 180px;
+  margin: 0 10px;
+  background: transparent url(../images/stars.jpg) no-repeat;
+  background-size: 350%;
+}
+input[type=radio] + label.stars3{
+  float: right;
+  background-position-x: 65px;
+  background-position-y: -207px;
+}
+input[type=radio] + label.stars4{
+  background-position-x: -195px;
+  background-position-y: -207px;
+}
+input[type=radio] + label.stars5 {
+  background-position-x: -455px;
+  background-position-y: -207px;
+}
+	input[type=radio]:checked + label.stars,
+  input[type=radio] + label.stars:hover {
+	  background-position-y: 1px;
+	}
+/*--- /блок выбора категории отеля ---*/
+
+/*--- блок пожеланий---*/
+.travelers.wishes {
+  padding: 0
+}
+.travelers.wishes .form-group {
+  margin-top: 5px
+}
+
+/*--- блок контактной информации ---*/
+.travelers.contacts {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.travelers.contacts .row {
+  margin-top: 10px;
+}
+.travelers.contacts .section-title {
+  margin-top: 0;
+}
+.travelers.contacts .input-style {
+  width: 90%;
+}
+.travelers.contacts .input-style.middle {
+  margin: 0 5%;
+}
+.travelers.contacts .input-style.right {
+  margin: 0 0 0 10%;
+}
+.travelers.contacts .text-left {
+  margin-left: 0
+}
+.travelers.contacts .text-two {
+  margin-left: 5%
+}
+.travelers.contacts .text-last {
+  margin-left: 10%;
+}
+
+  /*Изменения в основном файле стилей style.css*/
+.pickmeup .pmu-instance {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, .17);
+}
+.pickmeup * {
+    overflow: hidden;
+}
+@media (max-width:768px) {
+  .pickmeup {
+      margin-left: -200px;
+      margin-top: 35px;
+  }
+}
+  /* Конец изменений в основном файле стилей style.css*/
+
+.review {
+  width: 100%;
+  /*margin: 5px 2.5%;*/
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px solid #c6c6c6;
+  border-radius: 1px;
+  -webkit-transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.new-select-style:hover,.form-group .input-style:hover, textarea.review:hover {
+    border: 2px solid #265aa8;
+  }
+
+.grown-select > option {
+	box-shadow: 0 5px 5px #ccc;
+}
+.grown-select:focus > option:checked {
+	background: #f6f6f6;
+}
+
+/*---блок feedback---*/
+.travelers .feedback {
+  margin: 50px 0 40px;
+}
+.feed {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+.feed:last-child {
+  margin-top: 15px
+}
+.print {
+  padding: 10px 0;
+}
+.button-print, .button-inquiry {
+  width: 80%;
+  height: 55px;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgba(38, 90, 168, .8);
+  border-radius: 0;
+  outline-style: groove;
+  outline-width: 2px;
+  outline-color: rgba(204,204,204,.3);
+}
+.circle-up .min-up {
+  width: 70px;
+  height: 70px;
+  margin: 3px auto;
+  background: transparent url(../images/icon-up.png) no-repeat;
+  background-size: contain;
+  -webkit-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+.circle-up:hover .min-up {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+}
+.inquiry {
+  padding: 10px 0;
+  text-align: right;
+}
+.button-inquiry {
+  background-color: rgba(83, 155, 67, .8);
+}
+.button-print:hover, .button-print:active {
+  background-color: rgba(38, 90, 168, 1);
+  outline-color: rgba(204, 204, 204, .5)
+}
+.button-inquiry:hover, .button-inquiry:active {
+  background-color: rgba(83, 155, 67, 1);
+  outline-color: rgba(204, 204, 204, .5)
+}
+.end-line {
+  width: 100%;
+  height: 3px;
+  background-color: #c6c6c6;
+  margin: 10px 0 35px;
+}
+
+/*------- медиа-запросы -------*/
+
+@media (max-width:992px) {
+	input[type=radio] + label.person {
+	  height: 130px;
+	  width: 130px;
+	  background-size: 700%;
+}
+  .col-xs-3.two {
+    padding-left: 2.3%;
+  }
+	input[type=radio] + label.person2 {
+		background-position-x: -255px
+	}
+  .col-xs-3.third {
+    padding-left: 5.2%;
+  }
+	  input[type=radio] + label.person3 {
+		background-position-x: -525px
+	  }
+	  input[type=radio] + label.person4 {
+		background-position-x: -780px
+	  }
+		input[type=radio]:checked + label.person,
+    input[type=radio] + label.person:hover {
+		  background-position-y: -211px;
+		}
+	.new-select-style {
+		margin-bottom: 10px
+	}
+	.help-block {
+		display: block;
+		margin-top: -10px
+	}
+  .country .new-select-style.left {
+    width: 100%;
+  }
+  .country .form-group.two, .form-group.city-fly {
+    margin-left: 0;
+    width: 45%
+  }
+  .country .form-group.right, .form-group.class {
+     margin-left: 10%;
+     width: 45%;
+  }
+  .country .form-group.right > .new-select-style {
+    width: 100%;
+  }
+  .country .form-group.city {
+    width: 38%
+  }
+  .country .form-group.program {
+    width: 57%;
+    margin-left: 5%;
+  }
+  .country .form-group.program > .new-select-style {
+    width: 100%;
+  }
+  .travelers.avia .input-style.middle {
+    width: 100%;
+    margin-left: 5px;
+  }
+  .travelers.avia .new-select-style.first {
+    width: 100%;
+  }
+  .travelers.avia .new-select-style.last {
+    width: 100%;
+  }
+  .form-group .text, .form-group .text-right {
+    text-align: left;
+  }
+  .grown-select {
+    background-position: 98% center;
+  }
+  .form-group.city > .help-block {
+    padding: 9px 0 0 5px;
+  }
+}
+@media (max-width:950px) {
+.travelers .section-title {
+    padding: 0 20px;
+    font-size: 22px;
+  }
+  .col-xs-3.two {
+    padding-left: 1.3%;
+  }
+  .col-xs-3.third {
+    padding-left: 3.3%;
+  }
+  .travelers-title::after {
+    top: -16px;
+  }
+  .travelers {
+	padding-top: 0;
+  }
+  input[type=radio] + label.stars {
+  display: inline-block;
+  height: 110px;
+  width: 170px;
+  margin: 0 10px;
+  background: transparent url(../images/stars.jpg) no-repeat;
+  background-size: 350%;
+}
+  input[type=radio] + label.stars3{
+	background-position: 30px 0;
+	background-position-y: -190px;
+ }
+  input[type=radio] + label.stars4{
+	background-position-x: -205px;
+	background-position-y: -190px;
+  }
+  input[type=radio] + label.stars5 {
+    background-position-x: -440px;
+    background-position-y: -190px;
+  }
+	input[type=radio]:checked + label.stars,
+  input[type=radio] + label.stars:hover {
+	  background-position-y: 7px;
+	}
+}
+
+@media (max-width:768px) {
+	.form-group .text-right {
+    text-align: left;
+	}
+	.form-travel-section .travel {
+		font-size: 34px;
+	}
+	.button-print, .button-inquiry {
+    width: 100%;
+    font-size: 14px;
+	}
+  .banner-block .card-figure {
+      height: 445px;
+  }
+  .banner-block .illuminator::after {
+    height: 445px;
+  }
+  .help-block {
+    margin-top: -10px;
+  }
+  .travelers .person-group {
+    padding-bottom: 14px;
+  }
+  input[type=radio] + label.person {
+	  height: 110px;
+	  width: 110px;
+  }
+	input[type=radio] + label.person1{
+		background-position: 0 0;
+	}
+	input[type=radio] + label.person2 {
+		background-position-x: -213px
+	}
+    input[type=radio] + label.person3 {
+	  background-position-x: -440px
+    }
+    input[type=radio] + label.person4 {
+	  background-position-x: -435px
+    }
+	input[type=radio]:checked + label.person,
+  input[type=radio] + label.person:hover {
+		background-position-y: -179px;
+	}
+  .new-select-style {
+    width: 100%;
+  }
+  .new-select-style.center {
+    margin: 5px 0 0 5px;
+  }
+  .new-select-style.right {
+    margin: 15px 0 0 5px;
+  }
+  .travelers .travelers-title {
+    margin-left: 5px;
+  }
+  .travelers.contacts .input-style {
+    width: 100%;
+  }
+  .travelers.contacts .input-style.middle {
+    margin: 0;
+  }
+  .travelers.contacts .input-style.right {
+    margin: 0;
+  }
+}
+
+@media (max-width:570px) {
+	.banner-block .card-figure {
+		height: 545px;
+	 }
+	.banner-block .illuminator::after {
+		height: 545px;
+	 }
+	input[type=radio] + label.person {
+	  height: 90px;
+	  width: 90px;
+	  background-size: 700%;
+}
+	input[type=radio] + label.person1{
+		background-position: 8px 0;
+	}
+	input[type=radio] + label.person2 {
+		background-position-x: -178px
+	}
+
+    input[type=radio] + label.person3 {
+	  background-position-x: -362px
+    }
+
+    input[type=radio] + label.person4 {
+	  background-position-x: -547px
+    }
+
+	input[type=radio]:checked + label.person,
+  input[type=radio] + label.person:hover {
+		background-position-y: -146px;
+	}
+	input[type=radio] + label.stars {
+		height: 90px;
+		width: 130px;
+	}
+    input[type=radio] + label.stars3{
+	   background-position-x: 35px;
+	   background-position-y: -150px;
+    }
+    input[type=radio] + label.stars4{
+	   background-position-x: -170px;
+	   background-position-y: -150px;
+    }
+
+    input[type=radio] + label.stars5 {
+       background-position-x: -340px;
+       background-position-y: -150px;
+    }
+
+	input[type=radio]:checked + label.stars,
+  input[type=radio] + label.stars:hover {
+	  background-position-y: 1px;
+	}
+	.travelers .row {
+		padding: 5px 0;
+	}
+  .country .form-group.city {
+    width: 100%;
+  }
+  .country .input-style.left {
+    width: 100%;
+  }
+  .country .form-group.program {
+    width: 100%;
+    margin-left: 0;
+  }
+	.print, .inquiry  {
+	  padding: 0;
+	}
+	.button-print, .button-inquiry {
+	  height: 45px;
+	}
+	.circle-up .min-up {
+	  width: 50px;
+	  height: 50px;
+	  margin: 0 auto;
+	}
+  .feed {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width:490px) {
+  .country .form-group.two, .form-group.city-fly {
+    width: 100%;
+  }
+  .country .form-group.right, .form-group.class {
+    margin-left: 0;
+    width: 100%;
+}
+}
+@media (max-width:420px) {
+	.col-xs-3, .col-xs-12 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.banner-block .card-figure {
+		height: 445px;
+	 }
+	.banner-block .illuminator::after {
+		height: 445px;
+	 }
+   .travelers .person-group {
+    padding-top: 14px;
+    margin-top: 0;
+  }
+	input[type=radio] + label.person {
+	  height: 60px;
+	  width: 60px;
+	  background-size: 700%;
+}
+	input[type=radio] + label.person1{
+		background-position: 6px 0;
+	}
+	input[type=radio] + label.person2 {
+		background-position-x: -118px
+	}
+    input[type=radio] + label.person3 {
+	  background-position-x: -242px
+    }
+    input[type=radio] + label.person4 {
+	  background-position-x: -360px
+    }
+	input[type=radio]:checked + label.person,
+  input[type=radio] + label.person:hover {
+		background-position-y: -98px;
+	}
+	input[type=radio] + label.stars {
+		height: 70px;
+		width: 95px;
+	}
+  .stars-group .col-xs-4 {
+    padding-left: 0
+  }
+    input[type=radio] + label.stars3{
+	   background-position-x: 40px;
+	   background-position-y: -100px;
+    }
+    input[type=radio] + label.stars4{
+	   background-position-x: -125px;
+	   background-position-y: -100px;
+    }
+
+    input[type=radio] + label.stars5 {
+       background-position-x: -250px;
+       background-position-y: -100px;
+    }
+
+	input[type=radio]:checked + label.stars,
+  input[type=radio] + label.stars:hover {
+	  background-position-y: 10px;
+	}
+	.button-print, .button-inquiry {
+	  font-size: 12px;
+	}
+	.circle-up .min-up {
+	  margin-left: -10px;
+	}
+}

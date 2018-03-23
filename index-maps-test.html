@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог стран</title>
+  <link href="css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+  <link href="css/style.css" type="text/css"  rel="stylesheet" />
+    <!--pre-new css-->
+  <link href="css/style-form.css" type="text/css"  rel="stylesheet" />
+  <link href="css/style-hotel.css" type="text/css"  rel="stylesheet" />
+  <link href="css/style-travels.css" type="text/css"  rel="stylesheet" />
+  <!--new css-->
+  <link href="css/style-map-test.css" type="text/css"  rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="body-outer map">
+    <div class="scale">
+      <div id="plus" class="plus">+</div>
+      <div id="minus" class="plus">&#x2012;</div>
+    </div>
+    <div class="container">
+      <section class="map-countries">
+				<div class="row">
+          <div class="logo-line">
+            <div class="line"></div>
+          </div>
+          <h1 id-"top" class="section-title selection">Каталог стран</h1>
+          <form class="form-travels-section" action="#" method="post">
+            <section class="travels-block country-select">
+        			<div class="row">
+        				<div class="col-xs-12">
+                  <div class="form-group col-xs-12">
+                    <div class="select-country">
+                      <label for="country" class="country-label col-sm-6">Выберите из списка или воспользуйтесь картой ниже:</label>
+                      <div class="col-sm-6"><p class="text-right">Страна:</p>
+                        <div class="new-select-style">
+                        <select class="selection-select col-xs-12" name="country" >
+                          <option value="Страна"> </option>
+                          <option value="avstraliya">Австралия</option>
+                          <option value="avstriya">Австрия</option>
+                          <option value="azerbaydzhan">Азербайджан</option>
+                          <option value="andorra">Андорра</option>
+                          <option value="antigua_i_barbuda">Антигуа и Барбуда</option>
+                          <option value="argentina">Аргентина</option>
+                          <option value="armeniya">Армения</option>
+                          <option value="aruba">Аруба</option>
+                          <option value="bagamy">Багамские острова</option>
+                          <option value="barbados">Барбадос</option>
+                          <option value="bakhreyn">Бахрейн</option>
+                          <option value="belgiya">Бельгия</option>
+                          <option value="bermudyi">Бермудские острова</option>
+                          <option value="botsvana">Ботсвана</option>
+                          <option value="braziliya">Бразилия</option>
+                          <option value="britanskie_virginskie_ostrova">Британские Виргинские острова</option>
+                          <option value="butan">Бутан</option>
+                          <option value="velikobritaniya">Великобритания</option>
+                          <option value="vengriya">Венгрия</option>
+                          <option value="venesuela">Венесуэла</option>
+                          <option value="vetnam">Вьетнам</option>
+                          <option value="germaniya">Германия</option>
+                          <option value="gankong">Гонконг</option>
+                          <option value="gretciya">Греция</option>
+                          <option value="gruziya">Грузия</option>
+                          <option value="daniya">Дания</option>
+                          <option value="dominikana">Доминиканская республика</option>
+                          <option value="egipet">Египет</option>
+                          <option value="zambiya">Замбия</option>
+                          <option value="zimbabve">Зимбабве</option>
+                          <option value="izrail">Израиль</option>
+                          <option value="indiya">Индия</option>
+                          <option value="indoneziya">Индонезия</option>
+                          <option value="iordaniya">Иордания</option>
+                          <option value="iran">Иран</option>
+                          <option value="irlandiya">Ирландия</option>
+                          <option value="ispaniya">Испания</option>
+                          <option value="italiya">Италия</option>
+                          <option value="kaymany">Каймановы острова</option>
+                          <option value="kambodzha">Камбоджа</option>
+                          <option value="kanada">Канада</option>
+                          <option value="keniya">Кения</option>
+                          <option value="kipr">Кипр</option>
+                          <option value="kitay">Китай</option>
+                          <option value="kolumbiya">Колумбия</option>
+                          <option value="koreya">Корея</option>
+                          <option value="kosta-rika">Коста-Рика</option>
+                          <option value="kuba">Куба</option>
+                          <option value="laos">Лаос</option>
+                          <option value="latviya">Латвия</option>
+                          <option value="litva">Литва</option>
+                          <option value="marokko">Мaрокко</option>
+                          <option value="mavrikiy">Маврикий</option>
+                          <option value="madagaskar">Мадагаскар</option>
+                          <option value="malayziya">Малайзия</option>
+                          <option value="maldivy">Мальдивы</option>
+                          <option value="malta">Мальта</option>
+                          <option value="martinika">Мартиника</option>
+                          <option value="meksika">Мексика</option>
+                          <option value="mozambik">Мозамбик</option>
+                          <option value="monako">Монако</option>
+                          <option value="myanma">Мьянма</option>
+                          <option value="namibia">Намибия</option>
+                          <option value="nepal">Непал</option>
+                          <option value="niderlandyi">Нидерланды</option>
+                          <option value="novaya_zelandiya">Новая Зеландия</option>
+                          <option value="norvegiya">Норвегия</option>
+                          <option value="oae">ОАЭ</option>
+                          <option value="oman">Оман</option>
+                          <option value="panama">Панама</option>
+                          <option value="peru">Перу</option>
+                          <option value="polsha">Польша</option>
+                          <option value="portugaliya">Португалия</option>
+                          <option value="reyunon">Реюньон</option>
+                          <option value="rossiya">Россия</option>
+                          <option value="ssha">США</option>
+                          <option value="seyshelskie_ostrova">Сейшельские острова</option>
+                          <option value="sen-bartelmi">Сен-Бартельми</option>
+                          <option value="sen-marten">Сен-Мартен</option>
+                          <option value="sent-vinsent-i-grenadiny">Сент-Винсент и Гренадины</option>
+                          <option value="sent-kits-i-nevis">Сент-Китс и Невис</option>
+                          <option value="sent-lyusiya">Сент-Люсия</option>
+                          <option value="singapur">Сингапур</option>
+                          <option value="sloveniya">Словения</option>
+                          <option value="tayland">Таиланд</option>
+                          <option value="tanzania">Танзания</option>
+                          <option value="terks-i-kaykos">Теркс и Кайкос</option>
+                          <option value="turtsiya">Турция</option>
+                          <option value="urugvay">Уругвай</option>
+                          <option value="fidzhi">Фиджи</option>
+                          <option value="filippiny">Филиппины</option>
+                          <option value="finlyandiya">Финляндия</option>
+                          <option value="frantciya">Франция</option>
+                          <option value="francuzskaya_polinezia">Французская Полинезия</option>
+                          <option value="horvatiya">Хорватия</option>
+                          <option value="chernogoriya">Черногория</option>
+                          <option value="chehiya">Чехия</option>
+                          <option value="chili">Чили</option>
+                          <option value="shveytcariya">Швейцария</option>
+                          <option value="shvetciya">Швеция</option>
+                          <option value="shri_lanka">Шри-Ланка</option>
+                          <option value="ekvador">Эквадор</option>
+                          <option value="yuar">ЮАР</option>
+                          <option value="yamayka">Ямайка</option>
+                          <option value="yaponiya">Япония</option>
+                        </select>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+        				</div>
+        			</div>
+        		</section>
+          </form>
+
+          <div class="outer">
+            <section id="map" class="map-section">
+              <!--<object id="map" type="image/svg+xml" data="images/map_2.svg" width="1200" height="auto">  </object>-->
+              <div class="lost lost-antigua">Antigua and Barbuda</div>
+              <div class="lost lost-aruba">Aruba</div>
+              <div class="lost lost-bermuda">Bermuda</div>
+              <div class="lost lost-british-virgin">British Virgin Islands</div>
+              <div class="lost lost-hong-kong">Hong Kong</div>
+              <div class="lost lost-cayman-islands">Cayman Islands</div>
+              <div class="lost lost-maldives">Maldives</div>
+              <div class="lost lost-saint-barthelemy">Saint Barthelemy</div>
+              <div class="lost lost-saint-lucia">Saint Lucia</div>
+              <div class="lost lost-saint-martin">Saint Martin</div>
+              <div class="lost lost-turks-and-caicos">Turks and Caicos Islands</div>
+              <div class="lost lost-polynesie">Polynesie</div>
+              <!--маркеры выбора стран-->
+              <div class="country-marker australia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                  <img src="images/Australia.jpg" alt="">
+                  <p>Австралия</p>
+                </div></a>
+              </div>
+              <div class="country-marker austria">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Austria.jpg" alt="">
+                  <p>Австрия</p>
+                </div></a>
+              </div>
+              <div class="country-marker antigua">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Antigua-and-Barbuda.jpg" alt="">
+                 <p>Антигуа и Барбуда</p>
+                </div></a>
+              </div>
+              <div class="country-marker azerbaijan">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Azerbaijan.jpg" alt="">
+                 <p>Азербайджан</p>
+                 </div></a>
+                </div>
+              <div class="country-marker andorra">
+         				<div class="marker-block"></div>
+         				<a href="#"><div class="description">
+         				  <img src="images/Andorra.jpg" alt="">
+                  <p>Андорра</p>
+                </div></a>
+              </div>
+              <div class="country-marker argentina">
+         				<div class="marker-block"></div>
+         				<a href="#"><div class="description">
+         				  <img src="images/Argentina.jpg" alt="">
+                  <p>Аргентина</p>
+                </div></a>
+              </div>
+              <div class="country-marker armenia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                  <img src="images/Armenia.jpg" alt="">
+                  <p>Армения</p>
+                </div></a>
+              </div>
+              <div class="country-marker aruba">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                  <img src="images/Aruba.jpg" alt="">
+                  <p>Аруба</p>
+                  </div></a>
+              </div>
+              <div class="country-marker bahamas">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Bahamas.jpg" alt="">
+                  <p>Багамские острова</p>
+                  </div></a>
+              </div>
+              <div class="country-marker barbados">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Barbados.jpg" alt="">
+                  <p>Барбадос</p>
+                  </div></a>
+              </div>
+              <div class="country-marker bahrain">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Bahrain.jpg" alt="">
+                  <p>Бахрейн</p>
+                  </div></a>
+              </div>
+              <div class="country-marker british-virgin-islands">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/British-Virgin-Islands.jpg" alt="">
+                  <p>Британские Виргинские острова</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker belgium">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Belgium.jpg" alt="">
+                  <p>Бельгия</p>
+                </div></a>
+              </div>
+              <div class="country-marker bermuda">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Bermuda.jpg" alt="">
+                  <p>Бермудские острова</p>
+                </div></a>
+              </div>
+              <div class="country-marker botswana">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Botswana.jpg" alt="">
+                  <p>Ботсвана</p>
+                </div></a>
+              </div>
+              <div class="country-marker brazil">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Brazil.jpg" alt="">
+                  <p>Бразилия</p>
+                </div></a>
+              </div>
+              <div class="country-marker brazil2">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Brazil.jpg" alt="">
+                  <p>Бразилия</p>
+                </div></a>
+              </div>
+              <div class="country-marker brazil3">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Brazil.jpg" alt="">
+                  <p>Бразилия</p>
+                </div></a>
+              </div>
+              <div class="country-marker bhutan">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Bhutan.jpg" alt="">
+                  <p>Бутан</p>
+                </div></a>
+              </div>
+              <div class="country-marker united-kingdom">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/United-Kingdom.jpg" alt="">
+                  <p>Великобритания</p>
+                </div></a>
+              </div>
+              <div class="country-marker hungary">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Hungary.jpg" alt="">
+                  <p>Венгрия</p>
+                </div></a>
+              </div>
+              <div class="country-marker venezuela">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Venezuela.jpg" alt="">
+                  <p>Венесуэла</p>
+                </div></a>
+              </div>
+              <div class="country-marker venezuela1">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Venezuela.jpg" alt="">
+                  <p>Венесуэла</p>
+                </div></a>
+              </div>
+              <div class="country-marker viet-nam">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Viet-Nam.jpg" alt="">
+                  <p>Вьетнам</p>
+                </div></a>
+              </div>
+              <div class="country-marker germany">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Germany.jpg" alt="">
+                  <p>Германия</p>
+                </div></a>
+              </div>
+              <div class="country-marker hong-kong">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Hong-Kong.jpg" alt="">
+                  <p>Гонконг</p>
+                </div></a>
+              </div>
+              <div class="country-marker greece">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Greece.jpg" alt="">
+                  <p>Греция</p>
+                </div></a>
+              </div>
+              <div class="country-marker georgia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Georgia.jpg" alt="">
+                  <p>Грузия</p>
+                </div></a>
+              </div>
+              <div class="country-marker denmark">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Denmark.jpg" alt="">
+                  <p>Дания</p>
+                </div></a>
+              </div>
+              <div class="country-marker dominican-republic">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Dominican-Republic.jpg" alt="">
+                  <p>Доминиканская республика</p>
+                </div></a>
+              </div>
+              <div class="country-marker egypt">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Egypt.jpg" alt="">
+                  <p>Египет</p>
+                </div></a>
+              </div>
+              <div class="country-marker zambia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Zambia.jpg" alt="">
+                  <p>Замбия</p>
+                </div></a>
+              </div>
+              <div class="country-marker zimbabwe">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Zimbabwe.jpg" alt="">
+                  <p>Зимбабве</p>
+                </div></a>
+              </div>
+              <div class="country-marker israel">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Israel.jpg" alt="">
+                  <p>Израиль</p>
+                </div></a>
+              </div>
+              <div class="country-marker india">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/India.jpg" alt="">
+                  <p>Индия</p>
+                </div></a>
+              </div>
+              <div class="country-marker indonesia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Indonesia.jpg" alt="">
+                  <p>Индонезия</p>
+                </div></a>
+              </div>
+              <div class="country-marker jordan">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Jordan.jpg" alt="">
+                  <p>Иордания</p>
+                </div></a>
+              </div>
+              <div class="country-marker iran">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Iran.jpg" alt="">
+                  <p>Иран</p>
+                </div></a>
+              </div>
+              <div class="country-marker ireland">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Ireland.jpg" alt="">
+                  <p>Ирландия</p>
+                </div></a>
+              </div>
+              <div class="country-marker spain">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Spain.jpg" alt="">
+                  <p>Испания</p>
+                </div></a>
+              </div>
+              <div class="country-marker italy">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Italy.jpg" alt="">
+                  <p>Италия</p>
+                </div></a>
+              </div>
+              <div class="country-marker cayman-islands">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Cayman-Islands.jpg" alt="">
+                  <p>Каймановы острова</p>
+                </div></a>
+              </div>
+              <div class="country-marker canada">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Canada.jpg" alt="">
+                  <p>Канада</p>
+                </div></a>
+              </div>
+              <div class="country-marker kenya">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Kenya.jpg" alt="">
+                  <p>Кения</p>
+                </div></a>
+              </div>
+              <div class="country-marker cyprus">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Cyprus.jpg" alt="">
+                  <p>Кипр</p>
+                </div></a>
+              </div>
+              <div class="country-marker colombia">
+                <div class="marker-block"></div>
+              <a href="#"><div class="description">
+                 <img src="images/Colombia.jpg" alt="">
+                  <p>Колумбия</p>
+                </div></a>
+              </div>
+              <div class="country-marker costa-rica">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Costa-Rica.jpg" alt="">
+                  <p>Коста-Рика</p>
+                </div></a>
+              </div>
+              <div class="country-marker cuba">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Cuba.jpg" alt="">
+                  <p>Куба</p>
+                </div></a>
+              </div>
+              <div class="country-marker korea">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Korea.jpg" alt="">
+                  <p>Корея</p>
+                </div></a>
+              </div>
+              <div class="country-marker latvia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Latvia.jpg" alt="">
+                  <p>Латвия</p>
+                </div></a>
+              </div>
+              <div class="country-marker lietuva">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Lietuva.jpg" alt="">
+                  <p>Литва</p>
+                </div></a>
+              </div>
+              <div class="country-marker marocco">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Marocco.jpg" alt="">
+                  <p>Марокко</p>
+                </div></a>
+              </div>
+              <div class="country-marker mauritius">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Mauritius.jpg" alt="">
+                  <p>Маврикий</p>
+                </div></a>
+              </div>
+              <div class="country-marker madagascar">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Madagascar.jpg" alt="">
+                  <p>Мадагаскар</p>
+                </div></a>
+              </div>
+              <div class="country-marker malaysia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Malaysia.jpg" alt="">
+                  <p>Малайзия</p>
+                </div></a>
+              </div>
+              <div class="country-marker maldives">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Maldives.jpg" alt="">
+                  <p>Мальдивы</p>
+                </div></a>
+              </div>
+              <div class="country-marker malta">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Malta.jpg" alt="">
+                  <p>Мальта</p>
+                </div></a>
+              </div>
+              <div class="country-marker mexico">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Mexico.jpg" alt="">
+                  <p>Мексика</p>
+                </div></a>
+              </div>
+              <div class="country-marker mozambique">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Mozambique.jpg" alt="">
+                  <p>Мозамбик</p>
+                </div></a>
+              </div>
+              <div class="country-marker monaco">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Monaco.jpg" alt="">
+                  <p>Монако</p>
+                </div></a>
+              </div>
+              <div class="country-marker myanmar">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Myanmar.jpg" alt="">
+                  <p>Мьянма</p>
+                </div></a>
+              </div>
+              <div class="country-marker namibia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Namibia.jpg" alt="">
+                  <p>Намибия</p>
+                </div></a>
+              </div>
+              <div class="country-marker nepal">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Nepal.jpg" alt="">
+                  <p>Непал</p>
+                </div></a>
+              </div>
+              <div class="country-marker netherlands">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Netherlands.jpg" alt="">
+                  <p>Нидерланды</p>
+                </div></a>
+              </div>
+              <div class="country-marker new-zealand">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/New-Zealand.jpg" alt="">
+                  <p>Новая Зеландия</p>
+                </div></a>
+              </div>
+              <div class="country-marker norway">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Norway.jpg" alt="">
+                  <p>Норвегия</p>
+                </div></a>
+              </div>
+              <div class="country-marker united-arab-emirates">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/United-Arab-Emirates.jpg" alt="">
+                  <p>ОАЭ</p>
+                </div></a>
+              </div>
+              <div class="country-marker oman">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Oman.jpg" alt="">
+                  <p>Оман</p>
+                </div></a>
+              </div>
+              <div class="country-marker panama">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Panama.jpg" alt="">
+                  <p>Панама</p>
+                </div></a>
+              </div>
+              <div class="country-marker peru">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Peru.jpg" alt="">
+                  <p>Перу</p>
+                </div></a>
+              </div>
+              <div class="country-marker poland">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/poland.jpg" alt="">
+                  <p>Польша</p>
+                </div></a>
+              </div>
+              <div class="country-marker portugal">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/portugal.jpg" alt="">
+                  <p>Португалия</p>
+                </div></a>
+              </div>
+              <div class="country-marker Russia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Russia.jpg" alt="">
+                  <p>Россия</p>
+                </div></a>
+              </div>
+              <div class="country-marker usa">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/USA.jpg" alt="">
+                  <p>Соединенные штаты Америки</p>
+                </div></a>
+              </div>
+              <div class="country-marker seychelles">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Seychelles.jpg" alt="">
+                  <p>Сейшельские острова</p>
+                </div></a>
+              </div>
+              <div class="country-marker singapore">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Singapore.jpg" alt="">
+                  <p>Сингапур</p>
+                </div></a>
+              </div>
+              <div class="country-marker slovenia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Slovenia.jpg" alt="">
+                  <p>Словения</p>
+                </div></a>
+              </div>
+              <div class="country-marker reunion">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Reunion.jpg" alt="">
+                  <p>Реюньон</p>
+                </div></a>
+              </div>
+              <div class="country-marker martinique">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Martinique.jpg" alt="">
+                  <p>Мартиника</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker laos">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Laos.jpg" alt="">
+                  <p>Лаос</p>
+                </div></a>
+              </div>
+              <div class="country-marker thailand">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Thailand.jpg" alt="">
+                  <p>Таиланд</p>
+                </div></a>
+              </div>
+              <div class="country-marker cambodia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Cambodia.jpg" alt="">
+                  <p>Камбоджа</p>
+                </div></a>
+              </div>
+              <div class="country-marker china">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/china.jpg" alt="">
+                 <p>Китай</p>
+                 </div></a>
+               </div>
+              <div class="country-marker saint-barthelemy">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Saint-Barthelemy.jpg" alt="">
+                  <p>Сен-Бартельми</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker saint-martin">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Saint-Martin.jpg" alt="">
+                  <p>Сен-Мартен</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker saint-kitts-and-nevis">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Saint-Kitts-and-Nevis.jpg" alt="">
+                  <p>Сент-Китс и Невис</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker saint-lucia">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Saint-Lucia.jpg" alt="">
+                  <p>Сент-Люсия</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker  saint-vincent-and-the-grenadines">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Saint-Vincent-and-the-Grenadines.jpg" alt="">
+                  <p>Сент-Винсент и Гренадины</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker tanzania">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Tanzania.jpg" alt="">
+                  <p>Танзания</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker turks-and-caicos-islands">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Turks-and-Caicos-Islands.jpg" alt="">
+                  <p>Теркс и Кайкос</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker turkey">
+        				<div class="marker-block"></div>
+        				<a href="#"><div class="description">
+        				 <img src="images/Turkey.jpg" alt="">
+                  <p>Турция</p>
+        				</div></a>
+      			  </div>
+              <div class="country-marker uruguay">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Uruguay.jpg" alt="">
+                  <p>Уругвай</p>
+                </div></a>
+              </div>
+              <div class="country-marker fiji">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Fiji.jpg" alt="">
+                  <p>Фиджи</p>
+                </div></a>
+              </div>
+              <div class="country-marker pilipinas">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Pilipinas.jpg" alt="">
+                  <p>Филиппины</p>
+                </div></a>
+              </div>
+              <div class="country-marker finland">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Finland.jpg" alt="">
+                  <p>Финляндия</p>
+                </div></a>
+              </div>
+              <div class="country-marker france">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/France.jpg" alt="">
+                  <p>Франция</p>
+                </div></a>
+              </div>
+              <div class="country-marker polynesie">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Polynesie.jpg" alt="">
+                  <p>Французская Полинезия</p>
+                </div></a>
+              </div>
+              <div class="country-marker croatia">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Croatia.jpg" alt="">
+                  <p>Хорватия</p>
+                </div></a>
+              </div>
+              <div class="country-marker croatia1">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Croatia.jpg" alt="">
+                  <p>Хорватия</p>
+                </div></a>
+              </div>
+              <div class="country-marker croatia1">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Croatia.jpg" alt="">
+                  <p>Хорватия</p>
+                </div></a>
+              </div>
+              <div class="country-marker montenegro">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Montenegro.jpg" alt="">
+                  <p>Черногория</p>
+                </div></a>
+              </div>
+              <div class="country-marker czech-republic">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Czech-Republic.jpg" alt="">
+                  <p>Чехия</p>
+                </div></a>
+              </div>
+              <div class="country-marker chile">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Chile.jpg" alt="">
+                  <p>Чили</p>
+                </div></a>
+              </div>
+              <div class="country-marker switzerland">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Switzerland.jpg" alt="">
+                  <p>Швейцария</p>
+                </div></a>
+              </div>
+              <div class="country-marker sweden">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Sweden.jpg" alt="">
+                  <p>Швеция</p>
+                </div></a>
+              </div>
+              <div class="country-marker sri-lanka">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Sri-Lanka.jpg" alt="">
+                  <p>Шри-Ланка</p>
+                </div></a>
+              </div>
+              <div class="country-marker ecuador">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Ecuador.jpg" alt="">
+                  <p>Эквадор</p>
+                </div></a>
+              </div>
+              <div class="country-marker south-africa">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/South-Africa.jpg" alt="">
+                  <p>ЮАР</p>
+                </div></a>
+              </div>
+              <div class="country-marker jamaica">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Jamaica.jpg" alt="">
+                  <p>Ямайка</p>
+                </div></a>
+              </div>
+              <div class="country-marker japan">
+                <div class="marker-block"></div>
+                <a href="#"><div class="description">
+                 <img src="images/Japan.jpg" alt="">
+                  <p>Япония</p>
+                </div></a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="map-countries">
+				<div class="row">
+          <div class="logo-line">
+            <div class="line"></div>
+          </div>
+          <h1 id-"top" class="section-title selection">Быстрый поиск отелей</h1>
+          <form action="#" method="post">
+            <section class="hotel-block">
+              <div class="row">
+                <div class="col-sm-5 col-xs-12">
+                  <div class="form-group col-xs-12">
+                    <p class="text-right">Страна:</p>
+                    <label for="country" class="sr-only"></label>
+                    <div class="new-select-style">
+                      <select class="hotel-select col-xs-12" name="country" >
+
+                        <option value="avstraliya">Австралия</option>
+                        <option value="avstriya">Австрия</option>
+                        <option value="azerbaydzhan">Азербайджан</option>
+                        <option value="andorra">Андорра</option>
+                        <option value="antigua_i_barbuda">Антигуа и Барбуда</option>
+                        <option value="argentina">Аргентина</option>
+                        <option value="armeniya">Армения</option>
+                        <option value="aruba">Аруба</option>
+                        <option value="bagamy">Багамские острова</option>
+                        <option value="barbados">Барбадос</option>
+                        <option value="bakhreyn">Бахрейн</option>
+                        <option value="belgiya">Бельгия</option>
+                        <option value="bermudyi">Бермудские острова</option>
+                        <option value="botsvana">Ботсвана</option>
+                        <option value="braziliya">Бразилия</option>
+                        <option value="britanskie_virginskie_ostrova">Британские Виргинские острова</option>
+                        <option value="butan">Бутан</option>
+                        <option value="velikobritaniya">Великобритания</option>
+                        <option value="vengriya">Венгрия</option>
+                        <option value="venesuela">Венесуэла</option>
+                        <option value="vetnam">Вьетнам</option>
+                        <option value="germaniya">Германия</option>
+                        <option value="gankong">Гонконг</option>
+                        <option value="gretciya">Греция</option>
+                        <option value="gruziya">Грузия</option>
+                        <option value="daniya">Дания</option>
+                        <option value="dominikana">Доминиканская республика</option>
+                        <option value="egipet">Египет</option>
+                        <option value="zambiya">Замбия</option>
+                        <option value="zimbabve">Зимбабве</option>
+                        <option value="izrail">Израиль</option>
+                        <option value="indiya">Индия</option>
+                        <option value="indoneziya">Индонезия</option>
+                        <option value="iordaniya">Иордания</option>
+                        <option value="iran">Иран</option>
+                        <option value="irlandiya">Ирландия</option>
+                        <option value="ispaniya">Испания</option>
+                        <option value="italiya">Италия</option>
+                        <option value="kaymany">Каймановы острова</option>
+                        <option value="kambodzha">Камбоджа</option>
+                        <option value="kanada">Канада</option>
+                        <option value="keniya">Кения</option>
+                        <option value="kipr">Кипр</option>
+                        <option value="kitay">Китай</option>
+                        <option value="kolumbiya">Колумбия</option>
+                        <option value="koreya">Корея</option>
+                        <option value="kosta-rika">Коста-Рика</option>
+                        <option value="kuba">Куба</option>
+                        <option value="laos">Лаос</option>
+                        <option value="latviya">Латвия</option>
+                        <option value="litva">Литва</option>
+                        <option value="marokko">Мaрокко</option>
+                        <option value="mavrikiy">Маврикий</option>
+                        <option value="madagaskar">Мадагаскар</option>
+                        <option value="malayziya">Малайзия</option>
+                        <option value="maldivy">Мальдивы</option>
+                        <option value="malta">Мальта</option>
+                        <option value="martinika">Мартиника</option>
+                        <option value="meksika">Мексика</option>
+                        <option value="mozambik">Мозамбик</option>
+                        <option value="monako">Монако</option>
+                        <option value="myanma">Мьянма</option>
+                        <option value="namibia">Намибия</option>
+                        <option value="nepal">Непал</option>
+                        <option value="niderlandyi">Нидерланды</option>
+                        <option value="novaya_zelandiya">Новая Зеландия</option>
+                        <option value="norvegiya">Норвегия</option>
+                        <option value="oae">ОАЭ</option>
+                        <option value="oman">Оман</option>
+                        <option value="panama">Панама</option>
+                        <option value="peru">Перу</option>
+                        <option value="polsha">Польша</option>
+                        <option value="portugaliya">Португалия</option>
+                        <option value="reyunon">Реюньон</option>
+                        <option value="rossiya" selected>Россия</option>
+                        <option value="ssha">США</option>
+                        <option value="seyshelskie_ostrova">Сейшельские острова</option>
+                        <option value="sen-bartelmi">Сен-Бартельми</option>
+                        <option value="sen-marten">Сен-Мартен</option>
+                        <option value="sent-vinsent-i-grenadiny">Сент-Винсент и Гренадины</option>
+                        <option value="sent-kits-i-nevis">Сент-Китс и Невис</option>
+                        <option value="sent-lyusiya">Сент-Люсия</option>
+                        <option value="singapur">Сингапур</option>
+                        <option value="sloveniya">Словения</option>
+                        <option value="tayland">Таиланд</option>
+                        <option value="tanzania">Танзания</option>
+                        <option value="terks-i-kaykos">Теркс и Кайкос</option>
+                        <option value="turtsiya">Турция</option>
+                        <option value="urugvay">Уругвай</option>
+                        <option value="fidzhi">Фиджи</option>
+                        <option value="filippiny">Филиппины</option>
+                        <option value="finlyandiya">Финляндия</option>
+                        <option value="frantciya">Франция</option>
+                        <option value="francuzskaya_polinezia">Французская Полинезия</option>
+                        <option value="horvatiya">Хорватия</option>
+                        <option value="chernogoriya">Черногория</option>
+                        <option value="chehiya">Чехия</option>
+                        <option value="chili">Чили</option>
+                        <option value="shveytcariya">Швейцария</option>
+                        <option value="shvetciya">Швеция</option>
+                        <option value="shri_lanka">Шри-Ланка</option>
+                        <option value="ekvador">Эквадор</option>
+                        <option value="yuar">ЮАР</option>
+                        <option value="yamayka">Ямайка</option>
+                        <option value="yaponiya">Япония</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <p class="text-right">Город/Курорт:</p>
+                    <label for="cityHotel" class="sr-only"></label>
+                    <div class="new-select-style">
+                      <select class="hotel-select col-xs-12" name="city" id="cityHotel">
+                        <option value="1" selected>Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                        <option value="3">Сочи</option>
+                        <option value="4">Ялта</option>
+                        <option value="5">Минеральные Воды</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2 col-xs-12">
+                  <div class="form-group col-xs-12">
+                    <p class="text">Наименование:</p>
+                    <label for="hotelName" class="sr-only"></label>
+                    <div class="new-select-style">
+                      <select class="hotel-select col-xs-12" name="name">
+                        <option value="1" selected>Показать все</option>
+                        <option value="1">Гостиница Националь</option>
+                        <option value="2">Отель Де Пари</option>
+                        <option value="3">СтандАрт Отель</option>
+                        <option value="4">Бутик Отель Столешников</option>
+                        <option value="5">Редиссон Ройал</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group col-xs-5">
+                      <p class="text">Категория:</p>
+                      <label for="Category" class="sr-only"></label>
+                      <div class="new-select-style">
+                        <select class="hotel-select col-xs-12" name="сategory" id="Category">
+                          <option value="1" selected>5*</option>
+                          <option value="2">4*</option>
+                          <option value="3">3*</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="inquiry-hotel col-xs-5 col-xs-offset-2">
+                      <input type="submit" class="button-hotel" value="Подобрать">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+      </section>
+      <div class="information">
+        <div class="logo-line"><div class="line"></div> </div>
+
+          <h2 class="information-title">Важная информация</h3>
+
+          <p class="text">Туристическая компания Sky Club не только предоставляет широкий спектр услуг по организации различных турпоездок в любой уголок мира, но и заботится о комфорте своих клиентов на протяжении всего периода сотрудничества.<br>Онлайн подбор тура является для клиента наиболее удобным и оперативным способом определиться с вариантом отдыха в соответствии с реальными возможностями (как туроператора, так и своими собственными). Основная информация доступна круглосуточно на сайте нашей компании </p>
+      </div>
+      <div class="end-line"></div>
+      <a href="#top">
+        <div class="circle-up center">
+          <div class="min-up"></div>
+        </div>
+      </a>
+      <div class="end-line"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+       $('#map').draggable({
+          
+           cursor: 'move'
+       });
+    });
+   </script>
+
+  	<script src="js/jquery.fancybox.min.js"></script>
+  	<script src="js/pickmeup.min.js"></script>
+  	<!-- map -->
+    <script src="js/map.js"></script>    <!-- скрипт для увеличения-уменьшения карты по клику -->
+</body>
+</html>

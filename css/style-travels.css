@@ -1,0 +1,898 @@
+/*блок выбора тура*/
+.body-outer.travels {
+    max-width: 1200px;
+    width: 95%;
+}
+.travels-group {
+    padding: 30px 0 0;
+}
+.travels-group .selection {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.travels-group .col-xs-12,
+.travels-group .col-xs-4,
+.travels-group .col-xs-2 {
+  padding: 0
+}
+section.travels-block {
+  width: 100%;
+  border: 2px solid #6f6f6f;
+  border-bottom: 10px solid #0d51a0;
+  background: transparent url(../images/logo-bg.png) no-repeat;
+  background-position: -18px center;
+  margin-bottom: 10px;
+}
+  section.travels-block > .row {
+    width: 91%;
+    margin: 0 4.5% 4%;
+  }
+  section.travels-block .form-group {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.travels-block .new-select-style {
+    width: 100%;
+  }
+  .selection-select, .days-select {
+    position: relative;
+    padding: 5px 10px;
+    color: #5e5e5e;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    /*for WebKit*/
+   -webkit-appearance: none;
+   /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    -o-text-overflow: '';
+       text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    background: transparent url(../images/arrow-down.png) no-repeat;
+    background-position: 97% center;
+  }
+  /*---wrap-period - выбор продолжительности и периода заезда в форме travels-block---*/
+  section.travels-block .wrap-period {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  .wrap-period > .form-group > .text {
+    padding-left: 14%
+  }
+  .wrap-period .from, .wrap-period .by {
+    margin-top: 5px;
+    padding-left:11%;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .wrap-period .by {
+    padding-left: 7.5%;
+  }
+  .wrap-period .from + .col-xs-4 {
+    margin-left: 5px
+  }
+  .wrap-period .bycalendar {
+    margin-left: -5px
+  }
+  .wrap-period .days-select {
+    padding: 3px 30px 7px;
+    color: #666;
+    font-size: 16px;
+    background: #fff url(../images/arrow-down.png) no-repeat;
+    background-position: 90% center;
+  }
+  /*Календарь в форме*/
+  section.travels-block .calendar{
+    width: -webkit-calc(100% - 23px);
+    width: calc(100% - 23px);
+    display: inline-block;
+    height: 32px;
+    font-size: 16px;
+    text-align: center;
+  }
+  section.travels-block .calendar-icon{
+    background: #eee url(../images/ico_calendar_goodwin.gif) no-repeat center;
+      display: inline-block;
+      padding: 6px 3px 10px;
+      width: 22px;
+      height: 34px;
+      vertical-align: middle;
+      margin-left: -3px;
+      cursor: pointer;
+  }
+  /*---конец wrap-period---*/
+  /*---сортировка и подбор---*/
+  section.travels-block .sort {
+    width: 90%;
+    margin-left: 10%;
+  }
+    /*---конец сортировка и подбор---*/
+  section.travels-block .selection-select {
+    padding: 3px 10px 4px;
+    background: #fff url(../images/arrow-down.png) no-repeat;
+    background-position: 97% center;
+  }
+
+  section.travels-block .button-selection {
+    text-transform: uppercase;
+    width: 100%;
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 5px;
+    overflow: hidden;
+    border: 2px solid #c6c6c6;
+    border-radius: 1px;
+    padding: 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(91, 145, 35, .8);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+  }
+
+  section.travels-block .button-selection:hover,
+  section.travels-block .button-selection:active {
+    background-color: rgba(91, 145, 35, 1);
+    outline-color: rgba(204, 204, 204, .5)
+  }
+
+  /*--paginator----*/
+  .paginator {
+    margin-bottom: 20px;
+    margin-right: 65px;
+    margin-top: 3px;
+    float: right;
+    font-size: 16px;
+  }
+  .paginator.two {
+    margin-bottom: 0
+  }
+  span.pages {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .paginator .active {
+  font-size: 20px;
+    color: #0d51a0;
+    font-weight: 700;
+  }
+  .paginator .left, .paginator .right {
+    font-size: 26px;
+    vertical-align: sub;
+}
+  /*--/paginator----*/
+
+    /*---блок аннотации путешествия travels item---*/
+  .travels-item {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 25px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+    .travels-item .row {
+      margin: 0;
+      padding: 0;
+    }
+    .travels-item .image {
+      width: 28.6%;
+      /*height: 186px;*/
+      overflow: hidden;
+      margin-left: -3px;
+    }
+
+    .travels-item .image > img {
+      object-fit: cover;
+      width: 100%;
+    }
+    .travels-item .description {
+      width: 71.7%;
+      padding: 0;
+    }
+    .travels-item .top {
+      width: 100%;
+      background: #0d51a0;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .travels-item .col-sm-8,
+    .travels-item .col-sm-4 {
+      padding: 0;
+    }
+    .travels-item .indent {
+      margin-left: 10%
+    }
+    .travels-title {
+      margin: 8px 0;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .travels-item .denotation {
+    margin-left: 20%;
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    }
+    .travels-item .text {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      padding-top: 3px
+    }
+    .travels-item .title-date {
+      font-size: 26px;
+    }
+    .travels-item .date {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .travels-item .date .plate {
+      width: 74px;
+      height: 25px;
+      background: #575656;
+      color: #fff;
+      font-size: 16px;
+      padding: 2px 8px;
+      margin-right: 9px;
+      margin-top: 10px;
+    }
+    .travels-item .plate.hoch {
+      width: 160px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+    .travels-item .bottom .cost {
+      margin-left: 20%;
+      padding-top: 5px;
+      text-align: left;
+      font-size: 26px;
+      font-weight: bolder;
+    }
+    .travels-item .value-euro {
+      display: flex;
+      justify-content: flex-end;
+      color: #5b9123;
+    }
+    .travels-item .value-euro > .num {
+      margin-right: 15px;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 900;
+      text-align: right;
+      letter-spacing: 4px;
+
+    }
+    .travels-item .value-euro > .letters {
+      width: 40px;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-top: 20px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-right: 15px;
+    }
+    .travels-item .value-rub {
+      display: flex;
+      justify-content: flex-end;
+      color: #323232;
+    }
+    .travels-item .value-rub > .num {
+      margin-right: 15px;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: right;
+      letter-spacing: 1px;
+      margin-top: -8px;
+    }
+    .travels-item .value-rub > .letters {
+      width: 40px;
+      text-align: left;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+    .travels-item .read-more {
+      margin-left: 20%;
+      font-size: 16px;
+      font-style: italic;
+      text-align: center;
+      color: #fff;
+      background-color: #5b9123;
+      height: 25px;
+      margin-top: -4px;
+    }
+    /*---/travels item---*/
+  /*---блок информации information ---*/
+.information {
+  margin: 10px 0;
+}
+  .information-title {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 25px auto 0px;
+  }
+  .information .text-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+  .information .text {
+    color: #323232;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+    margin-top: -5px;
+  }
+  /*---конец блока информации information ---*/
+.circle-up.center {
+  text-align: center;
+  margin: 25px auto 10px;
+}
+
+/*---блок слайдера на 2-й странице---*/
+.wrapper-carousel {
+  position: relative;
+  background-color: #fff;
+  margin: 0 -50px 20px;
+  height: 520px;
+  overflow: hidden;
+}
+#carousel {
+  width: 100%;
+}
+#carousel img {
+  display: block;
+  float: left;
+}
+#prev, #next {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+  height: 520px;
+  width: 13%;
+  top: 0;
+  position: absolute;
+}
+#prev:hover, #next:hover {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#prev {
+  left: 0;
+  background: rgba(255, 255, 255, 0.7) url(../images/icon-left.png) no-repeat;
+  background-position-x: 80%;
+  background-position-y: 65%;
+}
+#next {
+  right: 0;
+  background: rgba(255, 255, 255, 0.7) url(../images/icon-right.png) no-repeat;
+  background-position-x: 20%;
+  background-position-y: 65%;
+}
+
+/* jssor slider  */
+.issor-wrapper {
+  margin: 0 -50px
+}
+	.jssor_1 {
+		position:relative;
+    margin:0 auto;
+    top:0px;
+    left:0px;
+    width:1200px;
+    height:520px;
+    overflow:hidden;
+    visibility:hidden;
+	}
+	.jssorl-009-spin {
+		position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);
+	}
+  	.jssorl-009-spin  img {
+  		margin-top:-19px;position:relative;top:50%;width:38px;height:38px;
+      animation-name: jssorl-009-spin;
+      animation-duration: 1.6s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+  	}
+		.jssorcarousel {
+			cursor:default;position:relative;top:0px;left:0px;width:1200px;height:520px;overflow:hidden;
+		}
+    @keyframes jssorl-009-spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+		.jssora051.left {
+			width:155px;height:520px;top:0px;left:0px; background-color: rgba(255, 255, 255, 0.7);
+		}
+		.jssora051.left img {
+			position: absolute;
+			left: 40%;
+			top: 50%
+		}
+		.jssora051.right {
+			width:155px;height:520px;top:0px;right:0px; background-color: rgba(255, 255, 255, 0.7);
+		}
+		.jssora051.right img {
+			position: absolute;
+			right: 40%;
+			top: 50%
+		}
+		.jssora051 {display:block;position:absolute;cursor:pointer;}
+/*---конец блока слайдера на 2-й странице---*/
+/*---блок заказа тура tour---*/
+
+.tour .row {
+  margin: 15px 10%;
+  }
+  .tour .col-sm-3, .tour .col-sm-4 {
+    padding: 0;
+  }
+  .tour .cost {
+    padding-top: 5px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .tour .value-euro {
+    display: flex;
+    justify-content: flex-end;
+    color: #0d51a0;
+  }
+  .tour .value-euro > .num {
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    font-weight: 900;
+    text-align: right;
+  }
+  .tour .value-euro > .letters {
+    width: 40px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+  .tour .value-rub {
+    display: flex;
+    justify-content: flex-end;
+    color: #323232;
+  }
+  .tour .value-rub > .num {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-top: -8px;
+  }
+  .tour .value-rub > .letters {
+    width: 40px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2px 15px 0 10px;
+  }
+  .tour .title-tour {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    font-weight: 600;
+    margin: 20px auto 0;
+  }
+  .tour p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 auto;
+  }
+  .tour .button-selection {
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 2px solid #9c9c9c;
+    border-radius: 1px;
+    padding: 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(91, 145, 35, .8);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    -webkit-transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+  }
+  .button-selection:hover,
+  .button-selection:active {
+    background-color: rgba(91, 145, 35, 1);
+    outline-color: rgba(204, 204, 204, .5)
+  }
+
+  /*---секция travel-date---*/
+
+.travel-date .travelers-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.travelers-title > .section-title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 32px;
+  font-weight: bold;
+  background: #fff;
+  z-index: 2;
+}
+.travelers-title::after {
+  content: "";
+  position: relative;
+  top: -18px;
+  display: block;
+  border-bottom: 2px solid #c6c6c6;
+}
+.travel-date .content {
+  width: 100%
+}
+.travel-date .period {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #323232
+}
+.travel-date .middle {
+  text-align: center;
+  margin-top: 20px;
+}
+  .travel-date .week, .travel-date .week-gray {
+    display: inline-block;
+    width: 55px;
+    height: 35px;
+    border-radius: 10px;
+    padding-top: 5px;
+    background-color: #0451a0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 3px;
+  }
+  .travel-date .week-gray {
+    background: #b1b2b3;
+  }
+.travel-date .days-nights {
+  text-align: right;
+  text-transform: none;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #323232
+}
+
+  /*---конец секции travel-date---*/
+
+  /*--- секция Программа тура tour-program---*/
+.tour-program {
+  margin-top: 40px;
+  font-size: 18px;
+}
+.tour-program .row {
+  margin: 0 30px 0 20px;
+}
+.tour-program .travelers-title {
+  margin-bottom: 10px
+}
+.tour-program .day {
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 0
+}
+.tour-program .program {
+  padding: 0 20px 0 40px;
+  font-size: 18px;
+}
+.tour-program .program h3 {
+  font-weight: 600;
+  margin: 0;
+}
+  .tour-program .program .text {
+    padding: 0;
+    line-height: 26px
+  }
+  /*---конец секции tour-program---*/
+  /*---секция cost-tour---*/
+.cost-tour {
+  margin: 35px 0 45px
+}
+  .cost-tour .row{
+    width: 85%;
+    margin: 0 auto;
+  }
+.cost-tour .logo-line {
+  margin-bottom: -15px;
+}
+  .cost-tour .item > .dbl {
+    width: 40px;
+    margin: 0 auto;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+    .item > .dbl > span {
+      color: #0d51a0;
+    }
+    .travelers.two .row {
+      margin: 0 4%;
+      margin-top: 30px;
+    }
+    .travelers.two .row .button-inquiry {
+      background: rgba(125,38,38,.8);
+    }
+    .travelers.two .row .button-inquiry:hover {
+      background: rgba(125,38,38,1.0);
+    }
+/*------- медиа-запросы -------*/
+
+@media (max-width:1200px) {
+  .travels-item .image > img {
+    height: 100%;
+  }
+  section.travels-block .selection-select {
+    padding: 3px 5px 4px;
+    background: #fff url(../images/arrow-down.png) no-repeat;
+    background-position-x: calc(100% - 7px);
+    background-position-y: center;
+  }
+  section.travels-block .calendar {
+    font-size: 14px;
+  }
+  .travels-title {
+    font-size: 26px;
+  }
+  .days-select {
+    font-size: 16px;
+  }
+  .wrap-period > .form-group > .text {
+    padding-left: 12%;
+  }
+  .tour-program .col-xs-1 {
+    padding-right: 0
+  }
+}
+@media (max-width:1100px) {
+  section.travels-block .selection-select {
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+  }
+}
+@media (max-width:1050px) {
+  .travels-item .value-euro > .num,
+  .travels-item .value-euro > .letters,
+  .travels-item .value-rub > .num,
+  .travels-item .value-rub > .letters {
+    letter-spacing: 0px;
+  }
+  .travels-item .value-euro > .num {
+    font-size: 36px;
+  }
+  .travels-item .value-rub > .num {
+    font-size: 20px;
+  }
+  .travels-item .value-euro > .letters {
+    padding-top: 17px;
+  }
+  .travels-item .read-more {
+    margin-top: 2px;
+  }
+  .travels-item .title-date {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+}
+@media (max-width:1000px) {
+  .jssora051.left, .jssora051.right {
+    width: 145px;
+    right:0px;
+  }
+  .travels-title {
+    font-size: 24px;
+    padding-left: 0;
+  }
+  .travels-item .denotation {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  section.travels-block .button-selection {
+    font-size: 14px
+  }
+}
+@media (max-width:992px) {
+  section.travels-block > .row {
+    margin: 15px 4.5% 4%;
+  }
+  section.travels-block .form-group {
+    position: relative;
+    margin-top: 0;
+  }
+  section.travels-block .text-right {
+    text-align: right;
+  }
+  section.travels-block .wrap-period {
+    width: 100%;
+    margin: 0;
+  }
+    section.travels-block .wrap-period .row {
+      padding-right: 10%
+    }
+  section.travels-block .selection-select {
+    font-size: 16px
+  }
+  .wrap-period > .form-group > .text,
+  .sort > .form-group > .text {
+    margin-right: 0;
+    text-align: right;
+  }
+  .wrap-period .from {
+    padding-left: 7%;
+  }
+  .wrap-period .by {
+    padding-left: 3%;
+  }
+  .wrap-period .new-select-style.period {
+    width: 110%;
+    margin-left: -15%;
+  }
+  .travels-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid #d4d4d2;
+  }
+  .travels-item .image {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .travels-item .image > img {
+    height: 100%;
+    width: auto;
+  }
+  .travels-item .description {
+    width: 100%;
+  }
+  .travels-item .read-more {
+    margin-top: 4px;
+  }
+}
+@media (max-width:900px) {
+
+}
+@media (max-width:768px) {
+  .jssora051.left, .jssora051.right {
+    width: 140px;
+  }
+  section.travels-block .wrap-period .row {
+     padding-right: 0;
+  }
+  section.travels-block .sort {
+    width: 100%;
+    margin-left: 0;
+  }
+  section.travels-block .selection-select {
+    width: 100%;
+  }
+  .travels-title {
+    margin: 8px 0 4px;
+  }
+  .travels-item .denotation {
+  padding: 0;
+  margin-left: 10%;
+  margin-bottom: 5px
+  }
+  .travels-item .bottom .cost {
+    margin-left: 10%;
+    font-size: 24px;
+  }
+  .travels-item .value-euro {
+    margin-right: 34%;
+  }
+  .travels-item .value-euro > .num {
+    font-size: 34px;
+  }
+  .travels-item .value-rub {
+    margin-right: 34%;
+    margin-bottom: 10px
+  }
+  .travels-item .read-more {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width:570px) {
+  .jssora051.left, .jssora051.right {
+    width: 130px;
+  }
+  .travels-item .title-date {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width:420px) {
+  .paginator {
+    margin-bottom: 0px;
+    margin-right: 5px;
+  }
+  .travels-title {
+    font-size: 20px;
+  }
+  .travels-item .denotation {
+    font-size: 14px;
+  }
+  .travels-item .title-date {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+  .travels-item .value-euro {
+    margin-right: 10%;
+  }
+  .travels-item .value-euro > .num {
+    font-size: 30px;
+  }
+  .travels-item .value-rub {
+    margin-right: 10%;
+  }
+  .jssora051.left, .jssora051.right {
+    width: 123px;
+  }
+	.button-print, .button-inquiry {
+	  font-size: 12px;
+	}
+	.circle-up .min-up {
+	  margin: 0 auto;
+	}
+}
+@media (max-width:360px) {
+  .jssora051.left, .jssora051.right {
+    width: 115px;
+  }
+}

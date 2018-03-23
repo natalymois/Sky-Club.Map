@@ -1,0 +1,529 @@
+
+  /*блок выбора тура*/
+  .body-outer.travels {
+      max-width: 1200px;
+      width: 95%;
+  }
+  .body-outer.map {
+    position: relative;
+  }
+  .map-countries {
+      padding: 30px 0 0;
+  }
+  .map-countries .selection {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .map-countries .col-xs-12,
+  .map-countries .col-xs-4,
+  .map-countries .col-xs-2 {
+    padding: 0
+  }
+  .travels-block.country-select {
+    border: 0;
+    background: transparent;
+  }
+    .travels-block.country-select .form-group {
+      margin-top: 0;
+    }
+    section.travels-block .select-country {
+      width: 100%
+    }
+    section.travels-block .country-label {
+      margin: 20px 0 5px;
+      font-size: 18px;
+      color: #265aa8;
+      font-weight: 600;
+    }
+
+    section.travels-block .selection-select {
+      padding: 3px 10px 4px;
+      background: #fff url(../images/arrow-down.png) no-repeat;
+      background-position: 97% center;
+    }
+
+    /*--- секция "карта стран" map-section ---*/
+  .outer {
+    overflow: auto;
+    margin: 0 -50px;
+  }
+  .map-section  {
+      position: relative;
+      width: 1200px;
+      height: 930px;
+      overflow: auto;
+      margin: -50px 0 -200px;
+      background: #fff url(../images/map_2.svg) no-repeat;
+      background-size: 1200px 750px;
+    }
+  .lost {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    font-size: 1.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+  }
+  .lost-antigua {top: 414px; left: 393px}
+  .lost-aruba {top: 429px; left: 365px;}
+  .lost-bermuda {top: 379px; left: 367px;}
+  .lost-british-virgin {top: 409px; left: 380px;}
+  .lost-hong-kong {top: 394px; left: 920px;}
+  .lost-cayman-islands {top: 408px; left: 334px;}
+  .lost-maldives {top: 452px; left: 793px;}
+  .lost-saint-barthelemy {top: 411px; left: 391px;}
+  .lost-saint-lucia {top: 425px; left: 394px;}
+  .lost-saint-martin {top: 406px; left: 392px;}
+  .lost-turks-and-caicos {top: 398px; left: 365px;}
+  .lost-polynesie {top: 523px; left: 1130px;}
+
+    /*---маркеры стран с выпадающими блоками---*/
+  .country-marker {
+    position: absolute;
+    z-index: 2
+  }
+    .country-marker .marker-block {
+      position: relative;
+        background: rgba(0,0,0,0);
+      }
+  	.country-marker .description {
+      position: absolute;
+  		background: transparent;
+  		width: 200px;
+  	  height: 150px;
+  	  margin-left: -100px;
+  	  margin-top: -100px;
+  	  transform: scale(0);
+  	  transition: transform .5s ease-in-out;
+  	}
+    .country-marker.Russia .description {
+  	  margin-left: 100px;
+      margin-top: -150px
+  	}
+    .country-marker.canada .description,
+    .country-marker.usa .description,
+    .country-marker.china .description {
+  	  margin-left: 0px;
+      margin-top: -120px
+  	}
+    .country-marker.brazil .description,
+    .country-marker.brazil2 .description,
+    .country-marker.brazil3 .description {
+      margin-left: -50px;
+    }
+    .country-marker.chile .description,
+    .country-marker.australia .description {
+      margin-top: -160px
+    }
+      .country-marker .description p {
+        position: absolute;
+        bottom: 5px;
+        left: 5%;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+
+      }
+  .marker-block:hover + a>.description,
+  .marker-block:active + a>.description,
+  .description:hover {
+    transform: scale(1);
+  }
+    .country-marker .description::after {
+    	content: "\21e8";  /*\25ba \21f0   */
+    	font-weight: 900;
+    	font-size: 30px;
+    	position: absolute;
+      color: #fff;
+    	bottom: 40px;
+    	right: 10px;
+    	width: 30px;
+    	height: 10px;
+    }
+
+  .country-marker.australia {top: 505px; left: 915px;}
+    .country-marker.australia .marker-block {width: 123px; height: 130px;}
+
+  .country-marker.austria {top: 308px; left: 610px;}
+    .country-marker.austria .marker-block {width: 13px; height: 8px;}
+
+  .country-marker.azerbaijan {top: 332px; left: 710px;}
+    .country-marker.azerbaijan .marker-block {width: 12px; height: 10px;}
+
+  .country-marker.antigua {top: 414px; left: 393px;}
+    .country-marker.antigua .marker-block {width: 13px; height: 3px;}
+
+  .country-marker.andorra {top: 329px; left: 580px;}
+    .country-marker.andorra .marker-block {width: 5px; height: 3px;}
+
+  .country-marker.argentina {top: 546px; left: 376px;}
+    .country-marker.argentina .marker-block {width: 30px; height: 105px;}
+
+  .country-marker.armenia {top: 333px; left: 701px;}
+    .country-marker.armenia .marker-block {width: 7px; height: 6px;}
+
+  .country-marker.aruba {top: 426px; left: 365px;}
+    .country-marker.aruba .marker-block {width: 7px; height: 6px;}
+
+  .country-marker.bahamas {top: 386px; left: 345px;}
+    .country-marker.bahamas .marker-block {width: 20px; height: 10px;}
+
+  .country-marker.barbados {top: 427px; left: 396px;}
+    .country-marker.barbados .marker-block {width: 13px; height: 3px;}
+
+  .country-marker.bahrain {top: 386px; left: 726px;}
+    .country-marker.bahrain .marker-block {width: 6px; height: 5px;}
+
+  .country-marker.british-virgin-islands {top: 409px; left: 382px;}
+    .country-marker.british-virgin-islands .marker-block {width: 8px; height: 3px;}
+
+  .country-marker.belgium {top: 297px; left: 584px;}
+    .country-marker.belgium .marker-block {width: 8px; height: 6px;}
+
+  .country-marker.bermuda {top: 376px; left: 367px;}
+    .country-marker.bermuda .marker-block {width: 15px; height: 6px;}
+
+  .country-marker.botswana {top: 528px; left: 638px;}
+    .country-marker.botswana .marker-block {width: 18px; height: 20px;}
+
+  .country-marker.brazil {top: 464px; left: 370px;}
+    .country-marker.brazil .marker-block {width: 100px; height: 40px;}
+    .country-marker.brazil2 {top: 504px; left: 405px;}
+      .country-marker.brazil2 .marker-block {width: 60px; height: 30px;}
+      .country-marker.brazil3 {top: 534px; left: 418px;}
+        .country-marker.brazil3 .marker-block {width: 30px; height: 35px;}
+
+  .country-marker.bhutan {top: 378px; left: 840px;}
+    .country-marker.bhutan .marker-block {width: 10px; height: 5px;}
+
+  .country-marker.united-kingdom {top: 268px; left: 562px;}
+    .country-marker.united-kingdom .marker-block {width: 20px; height: 33px;}
+
+  .country-marker.hungary {top: 310px; left: 624px;}
+    .country-marker.hungary .marker-block {width: 14px; height: 8px;}
+
+  .country-marker.venezuela {top: 435px; left: 362px;}
+    .country-marker.venezuela .marker-block {width: 40px; height: 15px;}
+    .country-marker.venezuela1 {top: 450px; left: 375px;}
+      .country-marker.venezuela1 .marker-block {width: 13px; height: 14px;}
+
+  .country-marker.viet-nam {top: 394px; left: 897px;}
+    .country-marker.viet-nam .marker-block {width: 10px; height: 40px;transform: rotate(-30deg);}
+
+  .country-marker.laos {top: 400px; left: 879px;}
+    .country-marker.laos .marker-block {width: 10px; height: 12px;transform: rotate(-30deg);}
+
+  .country-marker.thailand {top: 413px; left: 876px;}
+    .country-marker.thailand .marker-block {width: 18px; height: 12px;}
+
+  .country-marker.cambodia {top: 425px; left: 888px;}
+    .country-marker.cambodia .marker-block {width: 15px; height: 12px;}
+
+  .country-marker.china {top: 321px; left: 815px;}
+    .country-marker.china .marker-block {width: 125px; height: 50px;}
+
+  .country-marker.germany {top: 285px; left: 595px;}
+    .country-marker.germany .marker-block {width: 20px; height: 22px;}
+
+  .country-marker.hong-kong {top: 392px; left: 920px;}
+    .country-marker.hong-kong .marker-block {width: 5px; height: 5px;}
+
+  .country-marker.greece {top: 337px; left: 635px;}
+    .country-marker.greece .marker-block {width: 17px; height: 23px;transform: rotate(-30deg);}
+
+  .country-marker.georgia {top: 326px; left: 692px;}
+    .country-marker.georgia .marker-block {width: 17px; height: 7px;}
+
+  .country-marker.denmark {top: 269px; left: 597px;}
+    .country-marker.denmark .marker-block {width: 12px; height:16px;}
+
+  .country-marker.dominican-republic {top: 406px; left: 363px;}
+    .country-marker.dominican-republic .marker-block {width: 10px; height:6px;}
+
+  .country-marker.egypt {top: 370px; left: 650px;}
+    .country-marker.egypt .marker-block {width: 30px; height:30px;}
+
+  .country-marker.zambia {top: 505px; left: 643px;}
+    .country-marker.zambia .marker-block {width: 25px; height:18px;}
+
+  .country-marker.zimbabwe {top: 523px; left: 656px;}
+    .country-marker.zimbabwe .marker-block {width: 18px; height:15px;}
+
+  .country-marker.israel {top: 363px; left: 674px;}
+    .country-marker.israel .marker-block {width: 7px; height: 8px;}
+
+  .country-marker.india {top: 381px; left: 790px;}
+    .country-marker.india .marker-block {width: 50px; height: 57px;}
+
+  .country-marker.indonesia {top: 465px; left: 880px;}
+    .country-marker.indonesia .marker-block {width: 125px; height: 40px;}
+
+  .country-marker.jordan {top: 365px; left: 681px;}
+    .country-marker.jordan .marker-block {width: 10px; height: 12px;}
+
+  .country-marker.iran {top: 350px; left: 716px;}
+    .country-marker.iran .marker-block {width: 40px; height: 30px;}
+
+  .country-marker.ireland {top: 281px; left: 546px;}
+    .country-marker.ireland .marker-block {width: 15px; height: 15px;}
+
+  .country-marker.spain {top: 330px; left: 560px;}
+    .country-marker.spain .marker-block {width: 25px; height: 25px;}
+
+  .country-marker.italy {top: 313px; left: 606px;}
+    .country-marker.italy .marker-block {width: 17px; height: 40px;transform: rotate(-33deg);}
+
+  .country-marker.cayman-islands {top: 406px; left: 334px;}
+    .country-marker.cayman-islands .marker-block {width: 7px; height: 7px;}
+
+  .country-marker.canada {top: 165px; left: 220px;}
+    .country-marker.canada .marker-block {width: 210px; height: 130px;}
+
+  .country-marker.kenya {top: 458px; left: 683px;}
+    .country-marker.kenya .marker-block {width: 20px; height: 20px;}
+
+  .country-marker.cyprus {top: 355px; left: 668px;}
+    .country-marker.cyprus .marker-block {width: 10px; height: 5px;}
+
+  .country-marker.colombia {top: 450px; left: 340px;}
+    .country-marker.colombia .marker-block {width: 35px; height: 15px;}
+
+  .country-marker.costa-rica {top: 435px; left: 320px;}
+    .country-marker.costa-rica .marker-block {width: 10px; height: 7px;}
+
+  .country-marker.cuba {top: 383px; left: 340px;}
+    .country-marker.cuba .marker-block {width: 10px; height: 35px; transform: rotate(-60deg);}
+
+  .country-marker.korea {top: 334px; left: 946px;}
+    .country-marker.korea .marker-block {width: 10px; height: 15px; transform: rotate(-30deg);}
+
+  .country-marker.latvia {top: 269px; left: 631px;}
+    .country-marker.latvia .marker-block {width: 20px; height: 7px;}
+
+  .country-marker.lietuva {top: 276px; left: 630px;}
+    .country-marker.lietuva .marker-block {width: 17px; height: 7px;}
+
+  .country-marker.marocco {top: 364px; left: 538px;}
+    .country-marker.marocco .marker-block {width: 35px; height: 14px; transform: rotate(-30deg);}
+
+  .country-marker.mauritius {top: 529px; left: 748px;}
+    .country-marker.mauritius .marker-block {width: 12px; height: 4px;}
+
+  .country-marker.reunion {top: 533px; left: 743px;}
+    .country-marker.reunion .marker-block {width: 12px; height: 4px;}
+
+  .country-marker.madagascar {top: 505px; left: 710px;}
+    .country-marker.madagascar .marker-block {width: 20px; height: 45px; transform: rotate(20deg);}
+
+  .country-marker.malaysia {top: 445px; left: 885px;}
+    .country-marker.malaysia .marker-block {width: 55px; height: 20px;}
+
+  .country-marker.singapore {top: 450px; left: 880px;}
+    .country-marker.singapore .marker-block {width: 5px; height: 5px;}
+
+  .country-marker.maldives {top: 450px; left: 793px;}
+    .country-marker.maldives .marker-block {width: 4px; height: 4px;}
+
+  .country-marker.malta {top: 353px; left: 617px;}
+    .country-marker.malta .marker-block {width: 8px; height: 4px;}
+
+  .country-marker.martinique {top: 421px; left: 393px;}
+    .country-marker.martinique .marker-block {width: 10px; height: 3px;}
+
+  .country-marker.mexico {top: 365px; left: 260px;}
+    .country-marker.mexico .marker-block {width: 30px; height: 70px; transform: rotate(-40deg);}
+
+  .country-marker.mozambique {top: 505px; left: 678px;}
+    .country-marker.mozambique .marker-block {width: 20px; height: 45px; transform: rotate(20deg);}
+
+  .country-marker.monaco {top: 325px; left: 594px;}
+    .country-marker.monaco .marker-block {width: 4px; height: 4px;}
+
+  .country-marker.myanmar {top: 387px; left: 857px;}
+    .country-marker.myanmar .marker-block {width: 20px; height: 30px; transform: rotate(30deg);}
+
+  .country-marker.namibia {top: 522px; left: 613px;}
+    .country-marker.namibia .marker-block {width: 25px; height: 35px; transform: rotate(4deg);}
+
+  .country-marker.nepal {top: 373px; left: 817px;}
+    .country-marker.nepal .marker-block {width: 17px; height: 10px;}
+
+  .country-marker.netherlands {top: 289px; left: 585px;}
+    .country-marker.netherlands .marker-block {width: 10px; height: 8px;}
+
+  .country-marker.new-zealand {top: 595px; left: 1070px;}
+    .country-marker.new-zealand .marker-block {width: 25px; height: 70px; transform: rotate(45deg);}
+
+  .country-marker.norway {top: 208px; left: 597px;}
+    .country-marker.norway .marker-block {width: 15px; height: 60px; transform: rotate(15deg);}
+
+  .country-marker.united-arab-emirates {top: 386px; left: 733px;}
+    .country-marker.united-arab-emirates .marker-block {width: 11px; height: 11px;transform: rotate(15deg);}
+
+  .country-marker.oman {top: 393px; left: 740px;}
+    .country-marker.oman .marker-block {width: 15px; height: 25px;transform: rotate(15deg);}
+
+  .country-marker.panama {top: 440px; left: 330px;}
+    .country-marker.panama .marker-block {width: 15px; height: 5px;}
+
+  .country-marker.peru {top: 479px; left: 343px;}
+    .country-marker.peru .marker-block {width: 20px; height: 45px;transform: rotate(-30deg);}
+
+  .country-marker.poland {top: 283px; left: 616px;}
+    .country-marker.poland .marker-block {width: 25px; height: 17px;}
+
+  .country-marker.Russia {top: 106px; left: 656px;}
+    .country-marker.Russia .marker-block {width: 385px; height: 175px;}
+
+  .country-marker.usa {top: 300px; left: 220px;}
+    .country-marker.usa .marker-block {width: 150px; height: 65px;transform: rotate(5deg);}
+
+  .country-marker.seychelles {top: 480px; left: 745px;}
+    .country-marker.seychelles .marker-block {width: 10px; height: 5px;}
+
+  .country-marker.slovenia {top: 305px; left: 628px;}
+    .country-marker.slovenia .marker-block {width: 10px; height: 5px;}
+
+  .country-marker.portugal {top: 333px; left: 540px;}
+    .country-marker.portugal .marker-block {width: 20px; height: 18px;}
+
+  .country-marker.saint-barthelemy {top: 410px; left: 391px;}
+    .country-marker.saint-barthelemy .marker-block {width: 8px; height: 3px;}
+
+  .country-marker.saint-martin {top: 405px; left: 392px;}
+    .country-marker.saint-martin .marker-block {width: 8px; height: 3px;}
+
+  .country-marker.saint-kitts-and-nevis {top: 412px; left: 387px;}
+    .country-marker.saint-kitts-and-nevis .marker-block {width: 8px; height: 3px;}
+
+  .country-marker.saint-lucia {top: 424px; left: 394px;}
+    .country-marker.saint-lucia .marker-block {width: 10px; height: 3px;}
+
+  .country-marker.saint-vincent-and-the-grenadines {top: 427px; left: 384px;}
+    .country-marker.saint-vincent-and-the-grenadines .marker-block {width: 10px; height: 3px;}
+
+  .country-marker.tanzania {top: 478px; left: 670px;}
+    .country-marker.tanzania .marker-block {width: 30px; height: 20px;}
+
+  .country-marker.turks-and-caicos-islands {top: 397px; left: 365px;}
+    .country-marker.turks-and-caicos-islands .marker-block {width: 10px; height: 4px;}
+
+  .country-marker.turkey {top: 333px; left: 655px;}
+    .country-marker.turkey .marker-block {width: 45px; height: 20px;}
+
+  .country-marker.uruguay {top: 569px; left: 408px;}
+    .country-marker.uruguay .marker-block {width: 15px; height: 15px;}
+
+  .country-marker.fiji {top: 522px; left: 1110px;}
+    .country-marker.fiji .marker-block {width: 15px; height: 10px;}
+
+  .country-marker.pilipinas {top: 405px; left: 940px;}
+    .country-marker.pilipinas .marker-block {width: 25px; height: 50px;transform: rotate(-20deg);}
+
+  .country-marker.finland {top: 208px; left: 630px;}
+    .country-marker.finland .marker-block {width: 25px; height: 50px;}
+
+  .country-marker.france {top: 302px; left: 565px;}
+    .country-marker.france .marker-block {width: 30px; height: 27px;}
+
+  .country-marker.polynesie {top: 522px; left: 1130px;}
+    .country-marker.polynesie .marker-block {width: 10px; height: 5px;}
+
+  .country-marker.croatia {top: 318px; left: 619px;}
+    .country-marker.croatia .marker-block {width: 4px; height: 10px;transform: rotate(-30deg);}
+    .country-marker.croatia1 {top: 318px; left: 621px;}
+      .country-marker.croatia1 .marker-block {width: 8px; height: 4px;}
+
+  .country-marker.montenegro {top: 328px; left: 624px;}
+    .country-marker.montenegro .marker-block {width: 10px; height: 4px;}
+
+  .country-marker.czech-republic {top: 300px; left: 615px;}
+    .country-marker.czech-republic .marker-block {width: 13px; height: 8px;}
+
+  .country-marker.chile {top: 533px; left: 360px;}
+    .country-marker.chile .marker-block {width: 15px; height: 130px;}
+
+  .country-marker.switzerland {top: 310px; left: 595px;}
+    .country-marker.switzerland .marker-block {width: 10px; height: 7px;}
+
+  .country-marker.sweden {top: 212px; left: 610px;}
+    .country-marker.sweden .marker-block {width: 15px; height: 70px;transform: rotate(15deg);}
+
+  .country-marker.sri-lanka {top: 439px; left: 818px;}
+    .country-marker.sri-lanka .marker-block {width: 10px; height: 15px;}
+
+  .country-marker.ecuador {top: 466px; left: 333px;}
+    .country-marker.ecuador .marker-block {width: 15px; height: 15px;transform: rotate(-30deg);}
+
+  .country-marker.south-africa {top: 553px; left: 627px;}
+    .country-marker.south-africa .marker-block {width: 40px; height: 25px;transform: rotate(-20deg);}
+
+  .country-marker.jamaica {top: 410px; left: 342px;}
+    .country-marker.jamaica .marker-block {width: 8px; height: 5px;}
+
+  .country-marker.japan {top: 300px; left: 970px;}
+    .country-marker.japan .marker-block {width: 25px; height: 65px;transform: rotate(15deg);}
+
+      /*---конец маркеров стран с выпадающими блоками---*/
+
+  .map .scale {
+    position: absolute;
+    left: 150px;
+    top: 750px;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10
+  }
+    .map .scale .plus {
+      width: 30px;
+      height: 30px;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 25px;
+      background: #0451a0;
+      margin-bottom: 10px;
+    }
+
+    /*--- конец секции "карта стран" map-section ---*/
+
+    /*---блок информации information ---*/
+   .map .information {
+    margin: 30px 0;
+  }
+    /*---конец блока информации information ---*/
+
+  /*------- медиа-запросы -------*/
+
+  @media (max-width:1200px) {
+
+  }
+  @media (max-width:1100px) {
+
+  }
+  @media (max-width:1050px) {
+
+  }
+  @media (max-width:1000px) {
+
+  }
+  @media (max-width:992px) {
+
+  }
+  @media (max-width:900px) {
+
+  }
+  @media (max-width:768px) {
+  }
+  @media (max-width:420px) {
+
+  }
+  @media (max-width:360px) {
+
+  }

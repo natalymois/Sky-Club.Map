@@ -58,6 +58,8 @@
       margin: -50px 0 -200px;
       background: #fff url(../images/map_2.svg) no-repeat;
       background-size: 1200px 750px;
+	  transition: all ease 1000ms;
+	  transform-origin: top left;
     }
   .lost {
     position: absolute;
@@ -92,11 +94,11 @@
       }
   	.country-marker .description {
       position: absolute;
-  		background: transparent;
-  		width: 200px;
+  	  background: transparent;
+  	  width: 200px;
   	  height: 150px;
   	  margin-left: -100px;
-  	  margin-top: -100px;
+  	  margin-top: -80px;
   	  transform: scale(0);
   	  transition: transform .5s ease-in-out;
   	}

@@ -47,8 +47,10 @@
 
     /*--- секция "карта стран" map-section ---*/
   .outer {
-    overflow: auto;
+    position: relative;
+    overflow: hidden;
     margin: 0 -50px;
+    height: 930px;
   }
   .map-section  {
       position: relative;
@@ -56,10 +58,12 @@
       height: 930px;
       overflow: auto;
       margin: -50px 0 -200px;
+      margin-top: -50px;
       background: #fff url(../images/map_2.svg) no-repeat;
       background-size: 1200px 750px;
-	  transition: all ease 1000ms;
-	  transform-origin: top left;
+  	  transition: transform ease 1000ms;
+  	  transform-origin: top left;
+
     }
   .lost {
     position: absolute;

@@ -67,8 +67,7 @@ buttonMinus.onclick = function (event) {
 let wrapper = document.querySelector('.outer');
 
 map.onmousedown = function(event) {
-  // document.removeEventListener('mousemove', onMouseMove);
-
+  // расстояние от курсора до краёв карты:
   let shiftX = event.clientX - map.getBoundingClientRect().left;
   let shiftY = event.pageY - map.getBoundingClientRect().top;
 
@@ -92,21 +91,15 @@ map.onmousedown = function(event) {
   function moveAt(pageX, pageY) {
     map.style.left = pageX - shiftX - wrapperLeft + 'px';
     map.style.top = pageY - shiftY - wrapperTop - mapMarginTop + 'px';
-    console.log(map.style.top);
-    console.log(wrapperTop);
-    console.log(shiftY);
-    console.log(pageYOffset);
-    console.log(event.clientY);
 
     return map.style.left,map.style.top;
   }
 
   function onMouseMove(event) {
-    // if (map.style.transform == 'scale(1)') return false;
     //не позволяем точке события (курсор и точка карты, где он нажат) выйти за пределы родителя
     if(parseInt(map.style.left) + shiftX > 0
     && parseInt(map.style.left) + shiftX < wrapperWidth
-    && parseInt(map.style.top) + mapMarginTop + shiftY > 0 &&parseInt(map.style.top) + mapMarginTop + shiftY < wrapperHeight) {
+    && parseInt(map.style.top) + mapMarginTop + shiftY > 0 && parseInt(map.style.top) + mapMarginTop + shiftY < wrapperHeight) {
       moveAt(event.pageX, event.pageY);
     }
     else {
